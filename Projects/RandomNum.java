@@ -7,6 +7,6 @@ public class RandomNum {
     public static void main(String[] args){
 
         RandomNum random = new RandomNum();
-        System.out.print(obj.randomNum);
+        System.out.print(random.randomNum);
     }
 }
