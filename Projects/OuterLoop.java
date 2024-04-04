@@ -1,19 +1,25 @@
 package Projects;
 
 public class OuterLoop {
+
+
      public static void main(String[] args) {
 
-         outer:
-         for (int i = 2; i < 100; i++){
-             System.out.println("i= "+i);
-             for (int j = 2; j < i; j++) {
-                 if (i % j == 0)
-                     continue outer;
+         Person p = new Person();
+         p.age = 35;
+         p.name = "Josef Novak";
+         int a = p.age;
+         a += 1;
 
-             }
-
-
-             System.out.print(i);
-         }
+         Person p2 = new Person();
+         p2.age = 13;
+         System.out.println(a);
      }
 }
+
+class Person {
+   int age;
+   String name;
+}
+
+
